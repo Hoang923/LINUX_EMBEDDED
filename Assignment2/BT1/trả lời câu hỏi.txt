@@ -1,0 +1,1 @@
+Dữ liệu sẽ xuất hiện ở cuối file do cờ O_APPEND bật nên sẽ chỉ cho ghi file vào cuối file mặc dù đã seek về đầu file.
