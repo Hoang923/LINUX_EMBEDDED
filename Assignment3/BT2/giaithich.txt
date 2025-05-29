@@ -1,0 +1,6 @@
+Khi một hàm trong exec family được gọi
+toàn bộ tiến trình hiện tại sẽ bị thay thế hoàn toàn bởi một chương trình mới
+bao gồm việc xóa toàn bộ không gian địa chỉ hiện tại (code, data, heap, stack)
+và nạp chương trình mới từ file thực thi được chỉ định 
+tuy nhiên, PID của tiến trình không thay đổi 
+nếu lời gọi exec() thành công, không có câu lệnh nào sau đó được thực thi 

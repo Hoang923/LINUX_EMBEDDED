@@ -1,0 +1,13 @@
+1. Zombie process 
+Là tiến trình đã kết thúc thực thi, nhưng vẫn còn tồn tại trong bảng tiến trình (process table). 
+Nguyên nhân là vì tiến trình cha chưa đọc mã kết thúc (exit status) của nó thông qua wait() hoặc waitpid(). 
+Tại sao lại xuất hiện?
+Vì hệ thống cần giữ thông tin của tiến trình con để cha có thể đọc kết quả kết thúc. 
+Nếu cha không làm điều đó, tiến trình con sẽ không bị xóa hoàn toàn, trở thành zombie.
+
+2. Orphan process
+Là tiến trình vẫn còn đang chạy, nhưng tiến trình cha của nó đã kết thúc trước khi nó kết thúc. 
+Khi đó, tiến trình mồ côi sẽ được tiến trình init (PID 1) hoặc systemd nhận nuôi, 
+để đảm bảo hệ thống vẫn quản lý được nó và dọn dẹp khi nó kết thúc.
+Tại sao lại xuất hiện?
+Khi tiến trình cha thoát ra (hoặc bị kill) trước khi con hoàn thành.
