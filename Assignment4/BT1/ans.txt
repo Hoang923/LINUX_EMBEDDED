@@ -1,0 +1,3 @@
+pthread_create() dùng để tạo thread
+pthread_join() dùng để chờ thread kết thúc
+-> hàm sẽ block main cho tới khi nhận được tín hiệu thread kết thúc.

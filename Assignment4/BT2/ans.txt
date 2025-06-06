@@ -1,0 +1,2 @@
+Cần mutex vì nhiều thread cùng truy cập và thay đổi counter
+nếu ko có thread sẽ xảy ra race condition dẫn tới kết quả sai lệch
