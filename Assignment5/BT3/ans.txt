@@ -1,0 +1,1 @@
+Dùng kill() để gửi tín hiệu từ process này tới process khác.

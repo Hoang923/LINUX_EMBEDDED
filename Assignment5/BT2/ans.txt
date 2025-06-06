@@ -1,0 +1,1 @@
+nếu không gọi lại alarm(1) thì chỉ có đúng 1 tín hiệu SIGALRM được xử lý

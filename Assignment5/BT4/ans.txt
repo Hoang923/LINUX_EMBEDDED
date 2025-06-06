@@ -1,0 +1,1 @@
+nếu ko xử lý tín hiệu SIGTSPT, khi nhấn CTRL Z, chương trình sẽ bị STOP
